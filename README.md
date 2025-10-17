@@ -1,24 +1,56 @@
-# Azuro-Self-Adaptive-AI-for-Edge-Devices
-Azuro: Self-Adaptive AI for Edge Devices — Patent-Free, Cloud-Free, Open-Spirit
-# Azuro — Self-Adaptive AI Demo
 
-**Azuro** is an energy-efficient, self-adaptive AI framework for edge devices, written entirely in Python and PyTorch.
+# Azuro: Self-Adaptive AI for Edge Devices
 
-
+**Azuro** is a self-adaptive, energy-efficient AI framework built in Python & PyTorch.  
+It automatically freezes inactive weights after warm-up, reducing CPU usage by up to **40%**, and works fully offline — ideal for IoT, drones, sensors, and industrial edge devices.
 
 ---
 
-## 🔹 Key Features
+## 🔹 Demo EXE
 
-- **GOptA optimizer** — automatically freezes/unfreezes weights  
-- Real-time comparison with **Adam optimizer**  
-- **Live plots**: loss, mean h, freeze ratio (%), CPU%  
-- **Trial & HWID licensing**: up to 50 executions without a license, 7-day trial  
-- Exports **PNG + HTML report** at the end  
+- Windows executable: `Azuro_demo.exe` (~130 MB)  
+- Trial mode: 7 days OR 50 runs  
+- Full version: HWID-locked license
+
+### 📥 How to get the demo
+
+1. Download the demo `.exe` from the [GitHub Release / cloud link]().  
+2. Run the `.exe`. On first launch, it shows your **Hardware ID**.  
+3. If no license is present, the demo runs in trial mode:
+   - 7 days or 50 executions
+4. To unlock full version:
+   - Email your **Hardware ID** to `kretski1@gmail.com`
+   - Receive `azuro.lic` → save next to `.exe`  
+   - Next run automatically unlocks full functionality
 
 ---
 
-## 📦 Installation
+## 🔹 Screenshots
+
+
+
+- Live comparison: **GravOptAdaptiveE vs Adam**
+- Metrics: mean `h`, freeze ratio (%), CPU %
+- Reports saved: `azuro_demo_report.png` + `azuro_demo_report.html`
+
+---
+
+## 🔹 How it works
+
+1. **Optimizer:** `GravOptAdaptiveE`  
+   - Adaptive freeze/unfreeze of parameters  
+   - Warm-up, median-based threshold, monitoring CPU usage  
+2. **Tasks:** Tiny CNN / RNN demo  
+3. **Visualization:** Live plot of loss, CPU%, adaptive h, freeze ratio  
+4. **Report:** Generates **HTML + PNG** reports automatically
+
+---
+
+## 🔹 Installation (for source use)
 
 ```bash
+git clone https://github.com/yourusername/azuro.git
+cd azuro
+python -m pip install -r requirements.txt
+python azuro_live_protected.py
 
