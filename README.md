@@ -48,9 +48,9 @@ It automatically freezes inactive weights after warm-up, reducing CPU usage by u
 
 ## 🔹 Installation (for source use)
 
-```bash
-git clone https://github.com/yourusername/azuro.git
-cd azuro
-python -m pip install -r requirements.txt
-python azuro_live_protected.py
 
+Support
+
+You can support the development with a voluntary donation (e.g. 10€):
+
+https://buymeacoffee.com/azuro
