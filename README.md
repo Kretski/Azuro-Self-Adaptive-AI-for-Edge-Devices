@@ -25,7 +25,7 @@ It automatically freezes inactive weights after warm-up, reducing CPU usage by u
 
 ---
 
-## 🔹 Screenshots
+https://youtu.be/tr2CduSidyM
 
 
 
